@@ -5,6 +5,7 @@
 ### Laundry Made Easy: Providers Meet Customers
 
 
+
 Dry is a platform where you can join as a customer or a clothes service provider, with integrated **crypto wallet for payments**. This solves the issue for people who work from home offering clothing services, but don't operate from official shops. Thus, for individuals working from home, this platform provides a solution. With **crypto payments**, even small-scale operators can earn in cryptocurrency. In tier 1 cities and areas with high population density, this platform can be particularly effective. It serves professionals and bachelors alike, helping them find nearby clothing services.
 
 ## Project 
