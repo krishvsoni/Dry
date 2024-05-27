@@ -7,7 +7,7 @@ import { FieldValue } from '@google-cloud/firestore';
 import authMiddleware from '../middleware/authMiddleware';
 
 const router = express.Router();
-const serviceAccountFilePath = 'D:/JavaScript/Projects/Dry/server/src/key.json';
+const serviceAccountFilePath = '';
 
 
 
