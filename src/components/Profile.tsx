@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 
 export function Profile(){
@@ -14,7 +13,6 @@ export function Profile(){
     }
   });
 
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetchProfileData();

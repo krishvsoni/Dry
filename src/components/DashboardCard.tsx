@@ -82,8 +82,8 @@ const DashboardCard: React.FC<DashboardCardProps> = ({ userData }) => {
                     <td className="border px-4 py-2">{userData.serviceProviders[index].shopAddress}</td>
                     <td className="border px-4 py-2">{userData.serviceProviders[index].pincode}</td>
                     <td className="border px-4 py-2">
-                      <div style={{ height: '200px', width: '100%' }}>
-                        <Map center={[coordinate.latitude, coordinate.longitude]} zoom={12} width={'100%'} height={200}>
+                      <div style={{ height: '200px', width: parseInt('100%') }}>
+                        <Map center={[coordinate.latitude, coordinate.longitude]} zoom={12} width={parseInt('100%')} height={200}>
                           <Marker anchor={[coordinate.latitude, coordinate.longitude]} payload={1} />
                         </Map>
                       </div>
