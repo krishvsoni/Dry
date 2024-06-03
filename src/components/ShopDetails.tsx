@@ -21,7 +21,7 @@ export function ShopDetails() {
   const { index } = useParams<{ index: string }>();
   const [isLoading, setIsLoading] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
-  const [walletConnected, setWalletConnected] = useState(false); // State to track if MetaMask wallet is connected
+  const [walletConnected] = useState(false); // State to track if MetaMask wallet is connected
   const [liveLocation, setLiveLocation] = useState(false); // State to track if live location is selected
   const navigate = useNavigate();
 
@@ -160,19 +160,19 @@ export function ShopDetails() {
     });
   };
 
-  useEffect(() => {
-    if (typeof window.ethereum !== 'undefined' && (window as any).ethereum?.isMetaMask) {
-      (window as any).ethereum
-        .request({ method: 'eth_requestAccounts' })
-        .then(() => setWalletConnected(true)) 
-        .catch((err: Error) => {
-          console.error(err);
-          alert('Failed to connect MetaMask wallet.');
-        });
-    } else {
-      alert('MetaMask is not installed. Please install MetaMask to proceed with payment.');
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window.ethereum !== 'undefined' && (window as any).ethereum?.isMetaMask) {
+  //     (window as any).ethereum
+  //       .request({ method: 'eth_requestAccounts' })
+  //       .then(() => setWalletConnected(true)) 
+  //       .catch((err: Error) => {
+  //         console.error(err);
+  //         alert('Failed to connect MetaMask wallet.');
+  //       });
+  //   } else {
+  //     alert('MetaMask is not installed. Please install MetaMask to proceed with payment.');
+  //   }
+  // }, []);
 
   return (
     <>

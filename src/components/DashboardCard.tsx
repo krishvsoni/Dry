@@ -7,7 +7,7 @@ interface ServiceProvider {
   shopAddress: string;
   pincode: string;
 }
-
+// qgUY6gv28i43SoXHU7Lzlp2Z8UxzeaLj5HpfOQCnC8d3flC2jifPVro5PLpknvn8GZ1Fo-eYEkqCXziemsxfCw
 interface Coordinate {
   name: ReactNode;
   latitude: number;
